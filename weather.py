@@ -257,6 +257,10 @@ def handle_api_results(data):
         temp_label.configure(text=f'_._ °C')
         wea_label.configure(text='------')
         weather_icon_label.configure(image=None, text="")
+        feel_label.configure(text=f'Feels Like : _._ °C')
+        hum_label.configure(text=f'Humidity : -- %')
+        wind_label.configure(text=f'Wind Speed : --m/s')
+        press_label.configure(text=f'Pressure:--Pa')
         return
 
     country = data.get("sys", {}).get("country", "—")
